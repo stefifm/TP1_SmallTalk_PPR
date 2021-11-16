@@ -1,0 +1,249 @@
+"Playground trabajo practico 1 PPR"
+
+|doc1 doc2 doc3 doc4 doc5 doc6 doc7 doc8 doc9 doc10 doc11 doc12 doc13 doc14 doc15 doc16 doc17 doc18 doc19 doc20 doc21 doc22 doc23 doc24 doc25 doc26 doc27 doc28 doc29 doc30 transferencia1 partido1 transferencia2 partido2 transferencia3 transferencia4 transferencia5 partido3 partido4 partido5 archivo bandejaGestion bandejaCarga bandejaEntrada |
+
+transferencia1 := Transferencia new.
+transferencia2 := Transferencia new.
+transferencia3 := Transferencia new.
+transferencia4 := Transferencia new.
+transferencia5 := Transferencia new.
+partido1 := PlanillaPartido new.
+partido2 := PlanillaPartido new.
+partido3 := PlanillaPartido new.
+partido4 := PlanillaPartido new.
+partido5 := PlanillaPartido new.
+
+
+" CARGA DE DOCUMENTOS PARA TRANSFERENCIA  "
+
+doc1 := Documento tipo: 'jpg' titulo: 'dorso_dni_jugador1'  path: 'D:\Documentos\dorso_dni_jugador1.jpg'.
+transferencia1 adjuntarDocumentos: doc1.
+doc2 := Documento tipo: 'jpg' titulo: 'frente_dni_jugador1'  path: 'D:\Documentos\frente_dni_jugador1.jpg'.
+transferencia1 adjuntarDocumentos: doc2.
+doc3 := Documento tipo: 'pdf' titulo: 'planilla_solicitid_jugador1'  path: 'D:\Documentos\planilla_solicitid_jugador1.pdf'.
+transferencia1 adjuntarDocumentos: doc3.
+
+
+doc4 := Documento tipo: 'jpg' titulo: 'dorso_dni_jugador2'  path: 'D:\Documentos\dorso_dni_jugador2.jpg'.
+transferencia2 adjuntarDocumentos: doc4.
+doc5 := Documento tipo: 'jpg' titulo: 'frente_dni_jugador2'  path: 'D:\Documentos\frente_dni_jugador2.jpg'.
+transferencia2 adjuntarDocumentos: doc5.
+doc6 := Documento tipo: 'pdf' titulo: 'planilla_solicitid_jugador2'  path: 'D:\Documentos\planilla_solicitid_jugador2.pdf'.
+transferencia2 adjuntarDocumentos: doc6.
+
+
+doc13 := Documento tipo: 'jpg' titulo: 'dorso_dni_jugador3'  path: 'D:\Documentos\dorso_dni_jugador3.jpg'.
+transferencia3 adjuntarDocumentos: doc13.
+doc14 := Documento tipo: 'jpg' titulo: 'frente_dni_jugador3'  path: 'D:\Documentos\frente_dni_jugador3.jpg'.
+transferencia3 adjuntarDocumentos: doc14.
+doc15 := Documento tipo: 'pdf' titulo: 'planilla_solicitid_jugador3'  path: 'D:\Documentos\planilla_solicitid_jugador3.pdf'.
+transferencia3 adjuntarDocumentos: doc15.
+
+doc16 := Documento tipo: 'jpg' titulo: 'dorso_dni_jugador4'  path: 'D:\Documentos\dorso_dni_jugador4.jpg'.
+transferencia4 adjuntarDocumentos: doc16.
+doc17 := Documento tipo: 'jpg' titulo: 'frente_dni_jugador4'  path: 'D:\Documentos\frente_dni_jugador4.jpg'.
+transferencia4 adjuntarDocumentos: doc17.
+doc18 := Documento tipo: 'pdf' titulo: 'planilla_solicitid_jugador4'  path: 'D:\Documentos\planilla_solicitid_jugador4.pdf'.
+transferencia4 adjuntarDocumentos: doc18.
+
+
+						
+transferencia1 descripcion: 'Transferencia 1';
+					namePersona: 'Juan Perez';
+					fecha: (Date newDay: 5 month: 6 year: 2020 );
+					club: 'El Tala';
+					nameJugador: 'Juan Calisto';
+					dniJugador: 22368905.
+					
+
+						
+transferencia2 descripcion: 'Transferencia 2';
+					namePersona: 'Franco Clermont';
+					fecha: (Date newDay: 25 month: 6 year: 2021 );
+					club: 'La Tablada';
+					nameJugador: 'Marcos Bella Vista';
+					dniJugador: 13589647.
+					
+transferencia3 descripcion: 'Transferencia 3';
+					namePersona: 'Jou Bauer';
+					fecha: (Date newDay: 12 month: 4 year: 2020 );
+					club: 'Cordoba Athletic';
+					nameJugador: 'Kimi Raikkonen';
+					dniJugador: 29350604.
+
+transferencia4 descripcion: 'Transferencia 4';
+					namePersona: 'Alejandro Agag';
+					fecha: (Date newDay: 20 month: 12 year: 2021 );
+					club: 'Jockey Club';
+					nameJugador: 'Sebastian Vettel';
+					dniJugador: 36289560.								
+					
+					
+"CARGA MALA DE UNA TRANSFERENCIA"
+
+doc19 := Documento tipo: 'jpg' titulo: 'dorso_dni_jugador5'  path: 'D:\Documentos\dorso_dni_jugador5.jpg'.
+transferencia4 adjuntarDocumentos: doc16.
+doc20 := Documento tipo: 'jpg' titulo: 'frente_dni_jugador5'  path: 'D:\Documentos\frente_dni_jugador5.jpg'.
+transferencia4 adjuntarDocumentos: doc17.
+doc21 := Documento tipo: 'pdf' titulo: 'planilla_solicitid_jugador5'  path: 'D:\Documentos\planilla_solicitid_jugador5.pdf'.
+transferencia4 adjuntarDocumentos: doc18.
+
+transferencia5 descripcion: 'Transferencia 5';
+					fecha: (Date newDay: 29 month: 6 year: 2021 );
+					club: 'Universitario';
+					nameJugador: 'Fran Colapinto';
+					dniJugador: 34259684.	
+
+	
+					
+					
+"CARGA DE DOCUMENTOS PARA PLANILLA PARTIDO"
+
+doc7 := Documento tipo: 'pdf' titulo: 'club1'  path: 'D:\Documentos\club1.pdf'.
+partido1 adjuntarDocumentos: doc7. 
+doc8 := Documento tipo: 'pdf' titulo: 'club2'  path: 'D:\Documentos\club2.pdf'.
+partido1 adjuntarDocumentos: doc8.
+doc9 := Documento tipo: 'pdf' titulo: 'incidencias_partido1'  path: 'D:\Documentos\incidencias_partido1.pdf'.
+partido1 adjuntarDocumentos: doc9.
+
+doc10 := Documento tipo: 'pdf' titulo: 'club3' path: 'D:\Documentos\club3.pdf'.
+partido2 adjuntarDocumentos: doc10.
+doc11 := Documento tipo: 'pdf' titulo: 'club4'  path: 'D:\Documentos\club4.pdf'.
+partido2 adjuntarDocumentos: doc11.
+doc12 := Documento tipo: 'pdf' titulo: 'incidencias_partido2' path: 'D:\Documentos\incidencias_partido2.pdf'.
+partido2 adjuntarDocumentos: doc12.
+
+doc22 := Documento tipo: 'pdf' titulo: 'club5' path: 'D:\Documentos\club5.pdf'.
+partido3 adjuntarDocumentos: doc22.
+doc23 := Documento tipo: 'pdf' titulo: 'club6'  path: 'D:\Documentos\club6.pdf'.
+partido3 adjuntarDocumentos: doc23.
+doc24 := Documento tipo: 'pdf' titulo: 'incidencias_partido3' path: 'D:\Documentos\incidencias_partido3.pdf'.
+partido3 adjuntarDocumentos: doc24.
+
+doc25 := Documento tipo: 'pdf' titulo: 'club7' path: 'D:\Documentos\club7.pdf'.
+partido4 adjuntarDocumentos: doc25.
+doc26 := Documento tipo: 'pdf' titulo: 'club8'  path: 'D:\Documentos\club8.pdf'.
+partido4 adjuntarDocumentos: doc26.
+doc27 := Documento tipo: 'pdf' titulo: 'incidencias_partido4' path: 'D:\Documentos\incidencias_partido4.pdf'.
+partido4 adjuntarDocumentos: doc27.
+
+			
+				
+partido1 	descripcion: 'Partido 1';
+			namePersona: 'Jose Cansino';
+			fecha: (Date newDay: 20 month: 5 year: 2020 );
+			nroPartido: 1.	
+				
+partido2 	descripcion: 'Partido 2';
+			namePersona: 'Lucas Cansino';
+			fecha: (Date newDay: 25 month: 12 year: 2021 );
+			nroPartido: 2.
+			
+partido3 	descripcion: 'Partido 3';
+			namePersona: 'Stefano Domenicali';
+			fecha: (Date newDay: 12 month: 1 year: 2020 );
+			nroPartido: 3.
+
+partido4 	descripcion: 'Partido 4';
+			namePersona: 'Ross Brawn';
+			fecha: (Date newDay: 20 month: 7 year: 2021 );
+			nroPartido: 4.		
+			
+
+
+
+"CARGA MALA DE UNA PLANILLA PARTIDO"
+
+doc28 := Documento tipo: 'pdf' titulo: 'club9' path: 'D:\Documentos\club9.pdf'.
+partido5 adjuntarDocumentos: doc28.
+doc29 := Documento tipo: 'pdf' titulo: 'club10'  path: 'D:\Documentos\club10.pdf'.
+partido5 adjuntarDocumentos: doc29.
+doc30 := Documento tipo: 'pdf' titulo: 'incidencias_partido5' path: 'D:\Documentos\incidencias_partido5.pdf'.
+partido5 adjuntarDocumentos: doc30.
+
+partido5 	descripcion: 'Partido 5';
+			namePersona: 'Marcos Cansino';
+			fecha: (Date newDay: 10 month: 7 year: 2021 ).
+
+
+"EJECUCION DE LOS PUNTOS SUGERIDOS POR EL TRABAJO PRACTICO"
+
+archivo := Archivo new.
+bandejaCarga := BandejaCarga new.
+bandejaGestion := BandejaGestion new.
+bandejaEntrada := BandejaEntrada new.
+
+bandejaEntrada archivo: archivo.
+bandejaEntrada bandejaCarga: bandejaCarga.
+bandejaEntrada bandejaGestion: bandejaGestion.
+
+bandejaGestion archivo: archivo.
+bandejaCarga archivo: archivo.
+
+
+bandejaEntrada aceptarTramite: transferencia1; 
+					aceptarTramite: transferencia2;
+					aceptarTramite: transferencia3;
+					aceptarTramite: transferencia4;
+					aceptarTramite: transferencia5;
+					aceptarTramite: partido1;
+					aceptarTramite: partido2;
+					aceptarTramite: partido3;
+					aceptarTramite: partido4;
+					aceptarTramite: partido5.
+					
+
+Transcript clear.
+Transcript show: '====== Respuestas a los pedidos del segmento Bandeja de Entrada'; cr; cr.
+Transcript show: '====== Siguiente numero a asignar: ', bandejaEntrada verSiguienteNumero asString;cr.
+Transcript show: '====== Cantidad de tramites aceptados: ', bandejaEntrada tramitesAceptados asString; cr; cr.
+
+Transcript show: '====== Respuestas a los pedidos del segmento Bandeja Carga'; cr; cr.
+
+
+Transcript show: '====== Cantidad de Planillas con estado Pendiente: ', bandejaCarga cantidadPlanillas asString;cr.
+Transcript show: '====== Siguiente partido a cargar: ', String cr, bandejaCarga getPartidoCargar; cr.
+
+"AHORA VIENE EL MOMENTO DE PROCESAR PARTIDO, SE TIENE QUE VER EN ARCHIVOS"
+bandejaCarga procesarPartido: 3.
+bandejaCarga procesarPartido: 2.
+bandejaCarga procesarPartido: 1.
+bandejaCarga procesarPartido: 4.
+
+Transcript show: '====== Cantidad de Planillas con estado Pendiente [ACTUALIZADO]: ', bandejaCarga cantidadPlanillas asString;cr.
+Transcript show: '====== Siguiente partido a cargar [ACTUALIZADO]: ', String cr, bandejaCarga getPartidoCargar; cr; cr.
+
+Transcript show: '====== Respuestas a los pedidos del segmento Bandeja Gestion'; cr; cr.
+
+Transcript show: '====== Cantidad de Transferencias en estado pendiente: ', bandejaGestion cantidadTransferencias asString;cr.
+Transcript show: '====== Siguiente transferencia a gestionar: ', String cr, String cr, bandejaGestion getTransferencia asString.
+
+" USO DE LOS METODOS APROBAR Y RECHAZAR TRAMITES. ESO SE DEBE VER EN ARCHIVOS"
+
+bandejaGestion aprobarTransferencia: 2 monto: 4000.0.
+bandejaGestion aprobarTransferencia: 1 monto: 5000.0.
+bandejaGestion aprobarTransferencia: 3 monto: 6000.0.
+bandejaGestion rechazarTransferencia: 4 observaciones: 'No es muy bueno'.
+
+Transcript show: '====== Cantidad de Transferencias en estado pendiente [ACTUALIZADO]: ', bandejaGestion cantidadTransferencias asString;cr.
+Transcript show: '====== Siguiente transferencia a gestionar [ACTUALIZADO]: ', String cr, bandejaGestion getTransferencia asString; cr.
+
+Transcript show: '====== Monto acumulado hasta el momento: ', bandejaGestion montoTotal asString; cr; cr.
+
+Transcript show: '====== Respuestas a los pedidos del segmento Archivo'; cr; cr.
+
+Transcript show: '====== Busqueda de un tramite: ', (archivo buscarTramite: 1); cr.
+Transcript show: '====== ',archivo listarRechazados; cr.
+Transcript show: '====== Filtrado de planillas por fecha: ', String cr, String cr, 
+					(archivo filtrarPlanillaDesde: (Date newDay: 4 month: 1 year: 2020 ) 
+						hasta: (Date newDay: 26 month: 12 year: 2021 ) ); cr.
+Transcript show: '====== Monto total en rango de fechas: ',
+						(archivo montoTotalDesde: (Date newDay: 4 month: 1 year: 2020 ) 
+						hasta: (Date newDay: 26 month: 12 year: 2021)) asString; cr. 
+
+
+
+
+
+
+
